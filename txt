@@ -1,0 +1,3 @@
+Gateway port: 18789
+Shim Port: 8899
+Provider: Tamus

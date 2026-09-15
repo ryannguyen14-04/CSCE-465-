@@ -1,0 +1,22 @@
+Exec Policy
+┌────────────────┬─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Field          │ Value                                                                                               │
+├────────────────┼─────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Config         │ ~/.openclaw/openclaw.json                                                                           │
+│ Approvals      │ ~/.openclaw/exec-approvals.json                                                                     │
+│ Approvals File │ missing                                                                                             │
+└────────────────┴─────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Effective Policy
+┌────────────┬─────────────────────────────┬──────────────────────────────────────────────────┬────────────────────────┐
+│ Scope      │ Requested                   │ Host                                             │ Effective              │
+├────────────┼─────────────────────────────┼──────────────────────────────────────────────────┼────────────────────────┤
+│ tools.exec │ host=auto (OpenClaw         │ security=full (inherits requested tool           │ security=full\nask=off │
+│            │ default                     │ policy)\nask=off (inherits requested tool        │                        │
+│            │ (auto))\nsecurity=full      │ policy)\naskFallback=deny (OpenClaw default      │                        │
+│            │ (OpenClaw default           │ (deny))                                          │                        │
+│            │ (full))\nask=off (OpenClaw  │                                                  │                        │
+│            │ default (off))              │                                                  │                        │
+└────────────┴─────────────────────────────┴──────────────────────────────────────────────────┴────────────────────────┘
+
+Effective exec policy is the host approvals file intersected with requested tools.exec policy.

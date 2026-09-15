@@ -1,0 +1,74 @@
+Skills Status Check
+Agent: main
+
+Total: 52
+✓ Eligible: 14
+✓ Visible to model: 14
+✓ Available as command: 14
+Disabled: 0
+Blocked by allowlist: 0
+Excluded by agent allowlist: 0
+✗ Missing requirements: 38
+
+What this means:
+  Eligible: installed and requirements pass; the agent may still exclude it.
+  Visible to model: the agent can see the skill instructions during normal chat.
+  Available as command: people, scripts, or cron jobs can call the skill explicitly.
+
+Ready and visible to model:
+  clawhub
+  🧭 diagram-maker
+  healthcheck
+  🖼️ meme-maker
+  node-connect
+  🪲 node-inspect-debugger
+  📝 notion
+  python-debugpy
+  safe-marker
+  skill-creator
+  🧪 spike
+  🪝 taskflow
+  📥 taskflow-inbox-triage
+  ☔ weather
+
+Missing requirements:
+  🔐 1password (bins: op)
+  📝 apple-notes (bins: memo; os: darwin)
+  ⏰ apple-reminders (bins: remindctl; os: darwin)
+  🐻 bear-notes (bins: grizzly; os: darwin)
+  📰 blogwatcher (bins: blogwatcher)
+  🫐 blucli (bins: blu)
+  📸 camsnap (bins: camsnap)
+  🧩 coding-agent (anyBins: claude, codex, opencode; config: skills.entries.coding-agent.enabled)
+  🛌 eightctl (bins: eightctl)
+  ✨ gemini (bins: gemini)
+  gh-issues (bins: gh)
+  🧲 gifgrep (bins: gifgrep)
+  🐙 github (bins: gh)
+  🎮 gog (bins: gog)
+  📍 goplaces (bins: goplaces; env: GOOGLE_PLACES_API_KEY)
+  📧 himalaya (bins: himalaya)
+  📦 mcporter (bins: mcporter)
+  📊 model-usage (bins: codexbar; os: darwin)
+  📄 nano-pdf (bins: nano-pdf)
+  💎 obsidian (bins: obsidian)
+  🎤 openai-whisper (bins: whisper)
+  🌐 openai-whisper-api (env: OPENAI_API_KEY)
+  💡 openhue (bins: openhue)
+  🧿 oracle (bins: oracle)
+  🛵 ordercli (bins: ordercli)
+  👀 peekaboo (bins: peekaboo; os: darwin)
+  🔊 sag (bins: sag; env: ELEVENLABS_API_KEY)
+  📜 session-logs (bins: rg)
+  🔉 sherpa-onnx-tts (env: SHERPA_ONNX_RUNTIME_DIR, SHERPA_ONNX_MODEL_DIR)
+  🌊 songsee (bins: songsee)
+  🔊 sonoscli (bins: sonos)
+  🎵 spotify-player (anyBins: spogo, spotify_player)
+  🧾 summarize (bins: summarize)
+  ✅ things-mac (bins: things; os: darwin)
+  🧵 tmux (bins: tmux)
+  📋 trello (env: TRELLO_API_KEY, TRELLO_TOKEN)
+  🎬 video-frames (bins: ffmpeg)
+  🐦 xurl (bins: xurl)
+
+Tip: use `openclaw skills search`, `openclaw skills install`, and `openclaw skills update` for ClawHub-backed skills.

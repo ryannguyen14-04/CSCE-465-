@@ -1,0 +1,17 @@
+TIME	KIND	STATUS	AGENT	RUN	ACTION
+2026-09-15T20:09:18.844Z	agent_run	succeeded	main	1b7e6a8b-6ea2-4b5…	agent.run.finished
+2026-09-15T20:09:16.483Z	tool_action	succeeded	main	1b7e6a8b-6ea2-4b5…	tool.action.finished:exec
+2026-09-15T20:09:15.035Z	tool_action	started	main	1b7e6a8b-6ea2-4b5…	tool.action.started:exec
+2026-09-15T20:09:13.068Z	tool_action	succeeded	main	1b7e6a8b-6ea2-4b5…	tool.action.finished:read
+2026-09-15T20:09:13.056Z	tool_action	started	main	1b7e6a8b-6ea2-4b5…	tool.action.started:read
+2026-09-15T20:09:10.807Z	tool_action	failed	main	1b7e6a8b-6ea2-4b5…	tool.action.finished:skill_workshop
+2026-09-15T20:09:10.799Z	tool_action	started	main	1b7e6a8b-6ea2-4b5…	tool.action.started:skill_workshop
+2026-09-15T20:09:04.074Z	agent_run	started	main	1b7e6a8b-6ea2-4b5…	agent.run.started
+2026-09-15T19:16:25.694Z	agent_run	succeeded	main	5b2b17b8-c0f7-414…	agent.run.finished
+2026-09-15T19:16:18.214Z	agent_run	started	main	5b2b17b8-c0f7-414…	agent.run.started
+2026-09-15T18:48:57.100Z	agent_run	succeeded	main	bdb6bf71-260c-42d…	agent.run.finished
+2026-09-15T18:48:55.165Z	tool_action	succeeded	main	bdb6bf71-260c-42d…	tool.action.finished:write
+2026-09-15T18:48:55.156Z	tool_action	started	main	bdb6bf71-260c-42d…	tool.action.started:write
+2026-09-15T18:48:52.996Z	agent_run	started	main	bdb6bf71-260c-42d…	agent.run.started
+2026-09-15T18:46:20.203Z	agent_run	succeeded	main	701a30bd-93e8-432…	agent.run.finished
+2026-09-15T18:46:16.866Z	agent_run	started	main	701a30bd-93e8-432…	agent.run.started
