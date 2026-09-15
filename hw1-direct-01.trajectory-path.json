@@ -1,0 +1,6 @@
+{
+  "traceSchema": "openclaw-trajectory-pointer",
+  "schemaVersion": 1,
+  "sessionId": "hw1-direct-01",
+  "runtimeFile": "/home/ubuntu/.openclaw/agents/main/sessions/hw1-direct-01.trajectory.jsonl"
+}

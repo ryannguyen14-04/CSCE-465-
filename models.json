@@ -1,0 +1,31 @@
+{
+  "providers": {
+    "tamus": {
+      "baseUrl": "http://127.0.0.1:8899/openai",
+      "api": "openai-completions",
+      "apiKey": "via-shim",
+      "models": [
+        {
+          "id": "protected.gpt-4o",
+          "name": "protected.gpt-4o (Custom Provider)",
+          "contextWindow": 128000,
+          "maxTokens": 4096,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "reasoning": false
+        }
+      ],
+      "request": {
+        "allowPrivateNetwork": true
+      }
+    }
+  }
+}

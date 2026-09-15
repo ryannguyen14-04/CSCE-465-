@@ -1,0 +1,88 @@
+{
+  "agents": {
+    "defaults": {
+      "workspace": "/home/ubuntu/.openclaw/workspace",
+      "model": {
+        "primary": "tamus/protected.gpt-4o"
+      },
+      "models": {
+        "tamus/protected.gpt-4o": {}
+      }
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "8e4a587049db534960c068ddd805a238a987264cb3fb75a5"
+    },
+    "port": 18789,
+    "bind": "loopback",
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "tools": {
+    "profile": "coding"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "tamus": {
+        "baseUrl": "http://127.0.0.1:8899/openai",
+        "api": "openai-completions",
+        "apiKey": "via-shim",
+        "models": [
+          {
+            "id": "protected.gpt-4o",
+            "name": "protected.gpt-4o (Custom Provider)",
+            "contextWindow": 128000,
+            "maxTokens": 4096,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "reasoning": false
+          }
+        ],
+        "request": {
+          "allowPrivateNetwork": true
+        }
+      }
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "hooks": {
+    "internal": {
+      "entries": {
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-09-15T18:14:54.733Z",
+    "lastRunVersion": "2026.7.1-2",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.7.1-2",
+    "lastTouchedAt": "2026-09-15T18:16:13.795Z"
+  }
+}
