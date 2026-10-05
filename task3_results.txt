@@ -1,0 +1,4 @@
+Gateway -> node: READ notes.txt
+Node -> gateway: OK
+Replay rejected: Unexpected sequence: replay or out-of-order record
+Receiver sequence unchanged after rejected replay.

@@ -1,0 +1,28 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.6.0 -- /home/ubuntu/csce465-agentsec/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/ubuntu/csce465-agentsec/hw2
+collecting ... collected 20 items
+
+tests/test_handshake.py::test_valid_signature PASSED                     [  5%]
+tests/test_handshake.py::test_incorrect_rsa_key PASSED                   [ 10%]
+tests/test_handshake.py::test_invalid_signature PASSED                   [ 15%]
+tests/test_handshake.py::test_changed_public_value_or_nonce[4] PASSED    [ 20%]
+tests/test_handshake.py::test_changed_public_value_or_nonce[5] PASSED    [ 25%]
+tests/test_handshake.py::test_changed_public_value_or_nonce[6] PASSED    [ 30%]
+tests/test_handshake.py::test_changed_public_value_or_nonce[7] PASSED    [ 35%]
+tests/test_handshake.py::test_unexpected_identity PASSED                 [ 40%]
+tests/test_handshake.py::test_reflected_handshake_role PASSED            [ 45%]
+tests/test_handshake.py::test_malformed_transcript_rejected_before_hashing[length] PASSED [ 50%]
+tests/test_handshake.py::test_malformed_transcript_rejected_before_hashing[truncate] PASSED [ 55%]
+tests/test_handshake.py::test_malformed_transcript_rejected_before_hashing[trailing] PASSED [ 60%]
+tests/test_records.py::test_valid_handshake_and_bidirectional_messages PASSED [ 65%]
+tests/test_records.py::test_tampering_rejected_before_decryption[ciphertext] PASSED [ 70%]
+tests/test_records.py::test_tampering_rejected_before_decryption[header] PASSED [ 75%]
+tests/test_records.py::test_tampering_rejected_before_decryption[iv] PASSED [ 80%]
+tests/test_records.py::test_tampering_rejected_before_decryption[tag] PASSED [ 85%]
+tests/test_records.py::test_replayed_record PASSED                       [ 90%]
+tests/test_records.py::test_reflected_record PASSED                      [ 95%]
+tests/test_records.py::test_out_of_order_record PASSED                   [100%]
+
+============================== 20 passed in 1.44s ==============================

@@ -1,0 +1,5 @@
+Both peer signatures verified.
+Gateway and node derived identical keys: True
+Session ID: 90a147b040186330
+Four distinct encryption/MAC keys: True
+Second session has a fresh session ID: True

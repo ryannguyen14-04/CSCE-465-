@@ -1,0 +1,16 @@
+=== Original command ===
+Receiver processed: {"action":"READ","path":"notes.txt"}
+
+=== Relay changes READ to LIST without the key ===
+READ bytes:           52454144
+LIST bytes:           4c495354
+READ XOR LIST:        1e0c1210
+Original cipher bytes: 9befe941
+Modified cipher bytes: 85e3fb51
+Relation: C' = C XOR READ XOR LIST
+Receiver processed: {"action":"LIST","path":"notes.txt"}
+
+=== Replay: identical ciphertext accepted twice ===
+Receiver processed: {"action":"READ","path":"notes.txt"}
+Receiver processed: {"action":"READ","path":"notes.txt"}
+Replay accepted: no sequence tracking or replay detection.
